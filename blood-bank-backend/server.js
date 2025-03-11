@@ -12,7 +12,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Connect to MongoDB change
+
+// Connect to MongoDB cgg
+
+
+
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log(err));
